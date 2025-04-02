@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot de Passe</title>
+</head>
+<body>
+    <input type="password" id="password" placeholder="Votre mot de passe">
+    <button onclick="togglePassword()">👁️</button>
+
+    <script>
+        function togglePassword() {
+            let pwd = document.getElementById("password");
+            if (pwd.type === "password") {
+                pwd.type = "text";
+            } else {
+                pwd.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
